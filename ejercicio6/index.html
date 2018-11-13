@@ -1,71 +1,146 @@
 <!DOCTYPE html>
+
 <html>
+
 <head>
-	<title>Grillas</title>
-</head>
+
+                <meta charset="utf-8">
+
+                <title>Grillas</title>
 
 <style>
-	
-	.contenedor{
-		border: 0.5px solid black;
-		box-sizing: border-box;
-	}
 
-	header{
-		text-align: center;
-		background-color: green;	
-		color: white;
-	}
+ 
 
-	h1{
-		margin: 0;
-		padding: 20px;
-	}
+ 
 
-	.imgresponsiv{
-		max-width: 100%;		
+h1{
 
-	}
-	.row{
-		margin: auto;
-		clear: both;
-		display: table;
-	
-	}
+                text-align: center;
 
-	.cell{
-		padding: 10px;
-		float: left;
-		width: 33%;
-		display: table-cell;
+                color: white;
+
+}
+
+ 
+
+ 
+
+.row{
 
 
-	}
+                clear: both;
+
+                background-color: green;
+
+                margin: 0 15%;
+
+                border: solid 0.5px black;
+
+                box-sizing: border-box;
+
+}
+ 
+
+
+
+.colmax{
+
+                width: 33%;
+
+                float: left;
+
+}
+
+
+@media(max-width: 450px){
+.row{
+
+
+                clear: both;
+
+                background-color: green;
+
+                margin: 0 15%;
+
+                border: solid 0.5px black;
+
+                box-sizing: border-box;
+
+}
+.colmin{
+
+                width: 100%;
+
+                clear: left;
+}
+}
+.imgres{
+
+               
+
+                max-width: 100%;
+
+                display: block;
+
+                margin: auto;
+
+}
+
+ 
+
 </style>
+
+ 
+
+ 
+
+</head>
+
 <body>
 
-<div class="contenedor">
-	<header>
-		<h1>HOLA!!</h1>
-		<h1>ESTE ES UN EJERCICIO DE GRILLAS</h1>
-	</header>
+<div>   
 
-	<div class="row">
-		<div class="cell">
-			<img src="images/goku1.jpg" class="imgresponsiv">
-			Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-		</div>
-		<div class="cell">
-			<img src="images/gogeta1.jpg" class="imgresponsiv">
-			Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-		</div>
-		<div class="cell">
-			<img src="images/vegito1.jpg" class="imgresponsiv">
-			Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-	</div>
+                <div class="row">
+
+                               <h1>HOLA!!</h1>
+
+                               <h1>ESTE ES UN EJERCICIO DE GRILLAS</h1>
+
+                               <div class="colmax colmin">
+
+                                               <img src="images\gogeta1.jpg" class="imgres">
+
+                                               Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+
+                                               tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam
+
+                               </div>
+
+                               <div class="colmax colmin">
+
+                                               <img src="images\goku1.jpg" class="imgres">
+
+                                               Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+
+                                               tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam
+
+                               </div>
+
+                               <div class="colmax colmin">
+
+                                               <img src="images\vegito1.jpg" class="imgres">
+
+                                               Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+
+                                               tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam
+
+                               </div>
+
+                </div>
+
 </div>
+
 </body>
+
 </html>
